@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="095a9a9c-4f6a-4b7c-860c-9a3123da9107" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZK9qoj3JENZUqyhgdmNCckLZmh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RunManager" selected="TestNG.C:/InteliJ_Project/MavenSelenium/testng.xml">
+    <configuration name="C:/InteliJ_Project/MavenSelenium/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2019.3/system/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2019.3/system/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2019.3/system/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2019.3/system/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/InteliJ_Project/MavenSelenium/testng.xml" />
+        <item itemvalue="TestNG.C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (4)" />
+        <item itemvalue="TestNG.C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (3)" />
+        <item itemvalue="TestNG.C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (2)" />
+        <item itemvalue="TestNG.C:/Users/tause/.IdeaIC2019.3/system/temp-testng-customsuite.xml (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="095a9a9c-4f6a-4b7c-860c-9a3123da9107" name="Default Changelist" comment="" />
+      <created>1584577113093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584577113093</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="11" key="#LoginTest" timestamp="1584582190352">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="11" key="#LoginTest/0.0.1366.728@0.0.1366.728" timestamp="1584582190352" />
+    <state width="1322" height="163" key="GridCell.Tab.0.bottom" timestamp="1584673689062">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584673689062" />
+    <state width="1322" height="163" key="GridCell.Tab.0.center" timestamp="1584673689061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584673689061" />
+    <state width="1322" height="163" key="GridCell.Tab.0.left" timestamp="1584673689061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584673689061" />
+    <state width="1322" height="163" key="GridCell.Tab.0.right" timestamp="1584673689062">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584673689062" />
+    <state width="1322" height="223" key="GridCell.Tab.1.bottom" timestamp="1584581401674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584581401674" />
+    <state width="1322" height="223" key="GridCell.Tab.1.center" timestamp="1584581401674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584581401674" />
+    <state width="1322" height="223" key="GridCell.Tab.1.left" timestamp="1584581401674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584581401674" />
+    <state width="1322" height="223" key="GridCell.Tab.1.right" timestamp="1584581401674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584581401674" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1584577652633">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1584577652633" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1584578011049">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584578011049" />
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584670654754">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="384" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584670654754" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584586297583">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584586297583" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/LoginTest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

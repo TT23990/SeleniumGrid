@@ -1,0 +1,19 @@
+<suite name="ZaleniumGrid">
+    <parameter name="browser" value="Chrome"/>
+    <test thread-count="1" name="LoginTestChrome">
+        <classes>
+            <class name="org.example.LoginTest">
+            </class>
+        </classes>
+    </test>
+
+    <parameter thread-count="1" name="browser" value="Firefox"/>
+    <!--test name="LoginTestFirefox">
+        <classes>
+            <class name="org.example.LoginTest">
+            </class>
+        </classes>
+    </test-->
+
+
+</suite>
