@@ -39,7 +39,7 @@ public class LoginTest {
             dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
         }
         //URL url=new URL("http://localhost:4444/wd/hub");
-        URL url=new URL("http://18.191.220.167:4444//wd/hub");
+        URL url=new URL("http://3.21.186.76:4444/wd/hub");
         driver=new RemoteWebDriver(url,dc);
 
 //        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
@@ -58,7 +58,7 @@ public class LoginTest {
         driver.findElement(By.xpath("//input[@class='button-1 login-button']")).click();
 
         Thread.sleep(5000);
-
+        System.out.println("Title = " + driver.getTitle());
         Assert.assertEquals(driver.getTitle(),"nopCommerce demo store");
     }
 
