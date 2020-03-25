@@ -22,25 +22,46 @@ public class LoginTest {
 
     RemoteWebDriver driver;
     DesiredCapabilities dc;
-
+    URL url;
 //	WebDriver driver;
 
     @BeforeTest
-    @Parameters("browser")
-    void Setup(String br) throws MalformedURLException {
+    @Parameters({"browser", "host"})
+    void Setup(String br, String host) throws MalformedURLException {
+        switch (br.toLowerCase()){
+            case "chrome":
+                dc=new DesiredCapabilities();
+                dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
+                dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
+                url=new URL(host);
+                driver=new RemoteWebDriver(url,dc);
+                break;
+            case "firefox":
+                dc=new DesiredCapabilities();
+                dc.setCapability(CapabilityType.BROWSER_NAME,BrowserType.FIREFOX);
+                dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
+                url=new URL(host);
+                driver=new RemoteWebDriver(url,dc);
+                break;
 
-        dc=new DesiredCapabilities();
-
-        if(br.equals("Chrome")){
-            dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
-            dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
-        }else if(br.equals("Firefox")){
-            dc.setCapability(CapabilityType.BROWSER_NAME,BrowserType.FIREFOX);
-            dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
+            case "local":
+                System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+                driver=new ChromeDriver();
+                break;
         }
-        //URL url=new URL("http://localhost:4444/wd/hub");
-        URL url=new URL("http://3.21.186.76:4444/wd/hub");
-        driver=new RemoteWebDriver(url,dc);
+
+//        dc=new DesiredCapabilities();
+//
+//        if(br.equals("Chrome")){
+//            dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
+//            dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
+//        }else if(br.equals("Firefox")){
+//            dc.setCapability(CapabilityType.BROWSER_NAME,BrowserType.FIREFOX);
+//            dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
+//        }
+////        URL url=new URL("http://localhost:4444/wd/hub");
+//        url=new URL("http://3.135.227.252:4444/wd/hub");
+//        driver=new RemoteWebDriver(url,dc);
 
 //        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 //        driver=new ChromeDriver();
@@ -50,11 +71,13 @@ public class LoginTest {
     }
 
     @Test
-    void Login() throws InterruptedException{
-        driver.manage().window().maximize();
+    @Parameters({"UserName", "Password"})
+    void Login(String user, String pwd) throws InterruptedException{
+
         driver.findElement(By.xpath("//a[@class='ico-login']")).click();
-        driver.findElement(By.id("Email")).sendKeys("seleniumtest@gmail.com");
-        driver.findElement(By.id("Password")).sendKeys("Test@123");
+        driver.manage().window().maximize();
+        driver.findElement(By.xpath("//label[contains(text(),'Email:')]/following::input[1]")).sendKeys(user);
+        driver.findElement(By.xpath("//label[contains(text(),'Password:')]/following::input[1]")).sendKeys(pwd);
         driver.findElement(By.xpath("//input[@class='button-1 login-button']")).click();
 
         Thread.sleep(5000);
