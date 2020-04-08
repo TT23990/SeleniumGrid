@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="095a9a9c-4f6a-4b7c-860c-9a3123da9107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local_testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/XLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/ExcelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_DDT_002.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_DDT_002.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,16 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/InteliJ_Project/MavenSelenium/remote_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MavenSelenium" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/remote_testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MavenSelenium" />
       <extension name="coverage">
@@ -154,13 +141,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC_Login_DDT_002.loginDDT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.myapplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.myapplication" />
+      <option name="MAIN_CLASS_NAME" value="com.test.myapplication.TC_Login_DDT_002" />
+      <option name="METHOD_NAME" value="loginDDT" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/InteliJ_Project/MavenSelenium/local_testng.xml" />
+        <item itemvalue="TestNG.TC_Login_DDT_002.loginDDT" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="TestNG.LoginTest (1)" />
-        <item itemvalue="TestNG.C:/InteliJ_Project/MavenSelenium/remote_testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -199,22 +204,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1584916439390" />
-    <state width="1322" height="163" key="GridCell.Tab.0.bottom" timestamp="1586300060576">
+    <state width="1322" height="163" key="GridCell.Tab.0.bottom" timestamp="1586383710143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586300060576" />
-    <state width="1322" height="163" key="GridCell.Tab.0.center" timestamp="1586300060576">
+    <state width="1322" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586383710143" />
+    <state width="1322" height="163" key="GridCell.Tab.0.center" timestamp="1586383710143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586300060576" />
-    <state width="1322" height="163" key="GridCell.Tab.0.left" timestamp="1586300060576">
+    <state width="1322" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586383710143" />
+    <state width="1322" height="163" key="GridCell.Tab.0.left" timestamp="1586383710142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586300060576" />
-    <state width="1322" height="163" key="GridCell.Tab.0.right" timestamp="1586300060576">
+    <state width="1322" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586383710142" />
+    <state width="1322" height="163" key="GridCell.Tab.0.right" timestamp="1586383710143">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586300060576" />
+    <state width="1322" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586383710143" />
     <state width="1322" height="223" key="GridCell.Tab.1.bottom" timestamp="1586093923693">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

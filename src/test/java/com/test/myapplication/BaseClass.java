@@ -1,6 +1,10 @@
 package com.test.myapplication;
 
+import com.driver.utilities.CommonMethods;
+import com.driver.utilities.ExcelReader;
 import com.driver.utilities.ReadConfig;
+import com.driver.utilities.TestData;
+import jxl.read.biff.BiffException;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
@@ -23,14 +27,32 @@ public class BaseClass {
     WebDriver driver;
     Logger logger;
     ReadConfig readConfig;
-
+    TestData td;
 
     @BeforeClass
     @Parameters({"browser","platform","version","host"})
-    void Setup(String br,String pf,String vr, String host) throws IOException {
+    void Setup(String br,String pf,String vr, String host) throws IOException, BiffException {
         readConfig=new ReadConfig();
         PropertyConfigurator.configure("Log4j.properties");
         logger=Logger.getLogger("Test"); //printed in log file
+
+// Create Objects
+        ExcelReader excelReaderObj;
+        CommonMethods commonMethodobj = new CommonMethods();
+        td = new TestData();
+
+// Load the excel file for testing
+        excelReaderObj = new ExcelReader(readConfig.getTestData("data-path"));
+
+// Load the Excel Sheet Col in to Dictionary for use in test cases
+        excelReaderObj.ColumnDictionary();
+
+// Get the data from excel file
+        commonMethodobj.readExcelData (td);
+
+// Populate the username
+//        driver.findElement(By.id("idofElement")).sendKeys(data.getLoginUser().get(0));
+
 
 
         DesiredCapabilities dc=new DesiredCapabilities();

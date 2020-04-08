@@ -1,26 +1,28 @@
 package com.test.myapplication;
 
 import com.driver.pageobject.Login;
-import com.driver.utilities.XLUtils;
+import com.driver.utilities.ExcelReader;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class TC_Login_DDT_002 extends BaseClass{
 
-    @Test(dataProvider="LoginData")
+    @Test //(dataProvider="LoginData")
+    @Parameters({"UserName", "Password"})
     public void loginDDT(String user,String pwd) throws InterruptedException, IOException {
         Login lp=new Login(driver);
 
         lp.goToLogin();
-        lp.setUserName(user);
+        lp.setUserName(td.getLoginUser().get(0));
         logger.info("user name provided");
-        lp.setPassword(pwd);
+        lp.setPassword(td.getPassword().get(0));
         logger.info("password provided");
         lp.submitLogin();
 
@@ -61,21 +63,4 @@ public class TC_Login_DDT_002 extends BaseClass{
         }
     }
 
-
-    @DataProvider(name="LoginData")
-    Object[][] getData() throws IOException {
-//        String path=System.getProperty("user.dir")+"/src/test/java/com/inetbanking/testData/LoginData.xlsx";
-
-        int rownum= XLUtils.getRowCount(readConfig.getTestData("data-path"), readConfig.getTestData("data-sheet"));
-        int colcount=XLUtils.getCellCount(readConfig.getTestData("data-path"),readConfig.getTestData("data-sheet"),1);
-
-        String logindata[][]=new String[rownum][colcount];
-
-        for(int i=1;i<=rownum;i++) {
-            for(int j=0;j<colcount;j++) {
-                logindata[i-1][j]=XLUtils.getCellData(readConfig.getTestData("data-path"),readConfig.getTestData("data-sheet"), i,j);//1 0
-            }
-        }
-        return logindata;
-    }
 }
