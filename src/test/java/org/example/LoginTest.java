@@ -20,54 +20,24 @@ import java.net.URL;
 
 public class LoginTest {
 
-    RemoteWebDriver driver;
-    DesiredCapabilities dc;
-    URL url;
-//	WebDriver driver;
+    WebDriver driver;
 
     @BeforeTest
-    @Parameters({"browser", "host"})
-    void Setup(String br, String host) throws MalformedURLException {
-        switch (br.toLowerCase()){
-            case "chrome":
-                dc=new DesiredCapabilities();
-                dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
-                dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
-                url=new URL(host);
-                driver=new RemoteWebDriver(url,dc);
-                break;
-            case "firefox":
-                dc=new DesiredCapabilities();
-                dc.setCapability(CapabilityType.BROWSER_NAME,BrowserType.FIREFOX);
-                dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
-                url=new URL(host);
-                driver=new RemoteWebDriver(url,dc);
-                break;
+    @Parameters({"browser","platform","version","host"})
+    void Setup(String br,String pf,String vr, String host) throws MalformedURLException {
+        DesiredCapabilities dc=new DesiredCapabilities();
+        dc.setBrowserName(br);
+//        dc.setVersion(vr);
+//        dc.setCapability("browserName",br);
+//        dc.setCapability("platform",pf);
+//        dc.setCapability("version",vr);
 
-            case "local":
-                System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
-                driver=new ChromeDriver();
-                break;
-        }
-
-//        dc=new DesiredCapabilities();
-//
-//        if(br.equals("Chrome")){
-//            dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
-//            dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
-//        }else if(br.equals("Firefox")){
-//            dc.setCapability(CapabilityType.BROWSER_NAME,BrowserType.FIREFOX);
-//            dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX);
-//        }
-////        URL url=new URL("http://localhost:4444/wd/hub");
-//        url=new URL("http://3.135.227.252:4444/wd/hub");
-//        driver=new RemoteWebDriver(url,dc);
+        URL url=new URL(host);
+        driver=new RemoteWebDriver(url,dc);
 
 //        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 //        driver=new ChromeDriver();
-
-		driver.get("https://demo.nopcommerce.com/");
-
+        driver.get("https://demo.nopcommerce.com/");
     }
 
     @Test

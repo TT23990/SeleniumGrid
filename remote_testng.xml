@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Selenium_Grid">
+    <parameter name="UserName" value="seleniumtest@gmail.com"/>
+    <parameter name="Password" value="Test@123"/>
+
+<!--    <test thread-count="1" name="LoginTestLocal">-->
+<!--        <parameter name="browser" value="Local"/>-->
+<!--        <parameter name="host" value="Localhost"/>-->
+<!--        <classes>-->
+<!--            <class name="org.example.LoginTest">-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+   <test name="LoginTestChrome">
+       <parameter name="browser" value="Chrome"/>
+       <parameter name="host" value="http://3.21.207.69:4444/wd/hub"/>
+       <classes>
+           <class name="org.example.LoginTest">
+           </class>
+       </classes>
+   </test>
+
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="host" value="http://3.21.207.69:4444/wd/hub"/>
+    <test name="LoginTestFirefox">
+        <classes>
+            <class name="org.example.LoginTest">
+            </class>
+        </classes>
+    </test>
+
+
+
+
+</suite>
