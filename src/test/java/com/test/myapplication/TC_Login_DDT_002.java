@@ -1,6 +1,7 @@
 package com.test.myapplication;
 
 import com.driver.pageobject.Login;
+import com.driver.utilities.DataProviderClass;
 import com.driver.utilities.ExcelReader;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
@@ -14,15 +15,15 @@ import java.util.ArrayList;
 
 public class TC_Login_DDT_002 extends BaseClass{
 
-    @Test //(dataProvider="LoginData")
-    @Parameters({"UserName", "Password"})
-    public void loginDDT(String user,String pwd) throws InterruptedException, IOException {
+    @Test (dataProvider="dataDimension",dataProviderClass = DataProviderClass.class)
+//    @Parameters({"UserName", "Password"})
+    public void loginDDT(String row) throws InterruptedException, IOException {
         Login lp=new Login(driver);
 
         lp.goToLogin();
-        lp.setUserName(td.getLoginUser().get(0));
+        lp.setUserName(td.getLoginUser().get(Integer.parseInt(row)));
         logger.info("user name provided");
-        lp.setPassword(td.getPassword().get(0));
+        lp.setPassword(td.getPassword().get(Integer.parseInt(row)));
         logger.info("password provided");
         lp.submitLogin();
 
