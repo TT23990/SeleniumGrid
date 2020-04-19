@@ -7,6 +7,7 @@
 
     <listeners>
         <listener class-name="com.driver.utilities.Reporting" />
+        <listener class-name="com.driver.utilities.TestNGListener" />
     </listeners>
 
 

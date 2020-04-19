@@ -68,6 +68,10 @@ public class ExcelReader {
 	public static String ReadCell(int column, int row) {
 		return wrksheet.getCell(column, row).getContents();
 	}
+
+	public static String ReadCellData(String column, int row) {
+		return wrksheet.getCell(GetCell(column), row).getContents();
+	}
 	/**
 	 * Create Column Dictionary to hold all the Column Names
 	 */

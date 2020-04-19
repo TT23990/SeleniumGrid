@@ -9,6 +9,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -31,7 +32,7 @@ public class BaseClass {
 
     @BeforeClass
     @Parameters({"browser","platform","version","host"})
-    void Setup(String br,String pf,String vr, String host) throws IOException, BiffException {
+    void Setup(String br,String pf,String vr, String host) throws IOException, BiffException, InterruptedException {
         readConfig=new ReadConfig();
         PropertyConfigurator.configure("Log4j.properties");
         logger=Logger.getLogger("Test"); //printed in log file
@@ -73,9 +74,12 @@ public class BaseClass {
         System.setProperty("webdriver.chrome.driver", readConfig.getDriver("chrome"));
         driver=new ChromeDriver();
 
+//        By xpath=By.xpath("");
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
         driver.get(readConfig.getApplicationURL());
+        driver.manage().window().maximize();
     }
 
     @AfterClass

@@ -6,24 +6,26 @@ import com.driver.utilities.ExcelReader;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
+//@Listeners(com.driver.utilities.TestNGListener.class) //Add into TestNG.xml
 public class TC_Login_DDT_002 extends BaseClass{
 
-    @Test (dataProvider="dataDimension",dataProviderClass = DataProviderClass.class)
+    @Test (testName = "Login",dataProvider="dataDimension",dataProviderClass = DataProviderClass.class)
 //    @Parameters({"UserName", "Password"})
     public void loginDDT(String row) throws InterruptedException, IOException {
         Login lp=new Login(driver);
 
         lp.goToLogin();
-        lp.setUserName(td.getLoginUser().get(Integer.parseInt(row)));
+//        lp.setUserName(td.getLoginUser().get(Integer.parseInt(row))); //ReadCellData
+        lp.setUserName(ExcelReader.ReadCellData("UserName",Integer.parseInt(row)+1));
         logger.info("user name provided");
-        lp.setPassword(td.getPassword().get(Integer.parseInt(row)));
+        lp.setPassword(ExcelReader.ReadCellData("Password",Integer.parseInt(row)+1));
+//        lp.setUserName(td.getLoginUser().get(Integer.parseInt(row)));
         logger.info("password provided");
         lp.submitLogin();
 
