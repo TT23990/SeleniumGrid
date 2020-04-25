@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 
 import java.util.prefs.Preferences;
 
-public class TestNGListener implements ITestListener {
+final public class TestNGListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {

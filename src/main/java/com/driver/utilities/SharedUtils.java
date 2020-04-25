@@ -49,7 +49,7 @@ public class SharedUtils
 		example : this.takeSnapShot(driver, "c://test.png") ;
 	 */
 
-	public static void takeSnapShot(WebDriver webdriver, String fileWithPath) throws Exception{
+	public static String takeSnapShot(WebDriver webdriver, String fileWithPath) throws Exception{
 
 		//Convert web driver object to TakeScreenshot
 
@@ -66,7 +66,7 @@ public class SharedUtils
 		//Copy file at destination
 
 		FileUtils.copyFile(SrcFile, DestFile);
-
+		return DestFile.toString();
 	}
 
 }

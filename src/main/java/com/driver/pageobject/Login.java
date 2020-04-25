@@ -1,6 +1,8 @@
 package com.driver.pageobject;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -8,50 +10,65 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class Login {
 
-    WebDriver ldriver;
-
-    public Login(WebDriver rdriver){
-        ldriver=rdriver;
-        PageFactory.initElements(ldriver,this);
-    }
+    private static WebDriver wd;
+    private static Logger logger;
 
     @FindBy(xpath = "//label[contains(text(),'Email:')]/following::input[1]")
     @CacheLookup
-    WebElement txtUserName;
+    private static WebElement txtUserName;
 
     @FindBy(xpath = "//label[contains(text(),'Password:')]/following::input[1]")
     @CacheLookup
-    WebElement txtPassword;
+    private static WebElement txtPassword;
 
     @FindBy(xpath = "//a[@class='ico-login']")
     @CacheLookup
-    WebElement lnkLogin;
+    private static WebElement lnkLogin;
 
     @FindBy(xpath = "//input[@class='button-1 login-button']")
     @CacheLookup
-    WebElement btnLogin;
+    private static WebElement btnLogin;
 
-    @FindBy(xpath = "//a[@class='ico-logout']")
+    @FindBy(linkText = "Log out")
     @CacheLookup
-    WebElement lnkLogout;
+    private static WebElement lnkLogout;
 
-    public void setUserName(String user){
-        txtUserName.sendKeys(user);
+    public static void initElements(WebDriver remoteDriver,Logger remoteLogger){
+        wd=remoteDriver;
+        logger=remoteLogger;
+        PageFactory.initElements(wd,Login.class);
+        logger.info("****************** Initializing test execution *********************");
     }
-    public void setPassword(String pwd){
-        txtPassword.sendKeys(pwd);
-    }
-    public void goToLogin(){
+    public static void goToLogin() throws InterruptedException {
+        wd.navigate().refresh();
+        Thread.sleep(1000);
         lnkLogin.click();
+        logger.info("Navigated to login screen");
     }
-    public void submitLogin(){
+    public static void setUserName(String user) {
+        txtUserName.sendKeys(user);
+        logger.info("Username: "+user+" entered");
+    }
+    public static void setPassword(String pwd){
+        txtPassword.sendKeys(pwd);
+        logger.info("Password entered");
+    }
+    public static void submitLogin() throws InterruptedException {
         btnLogin.click();
+        Thread.sleep(2000);
+        logger.info("Login credentials submitted");
     }
-    public void goToLogout(){
-        lnkLogout.click();
+    public static void goToLogout(){
+        try {
+            lnkLogout.click();
+            logger.info("Application logout selected");
+        }catch (Exception e){
+            logger.warn("Unable to select logout");
+        }
     }
 
 }

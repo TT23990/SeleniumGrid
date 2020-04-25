@@ -6,7 +6,7 @@
     <parameter name="host" value="http://192.168.1.6:4444/wd/hub"/>
 
     <listeners>
-        <listener class-name="com.driver.utilities.Reporting" />
+        <listener class-name="com.test.myapplication.Reporting" />
         <listener class-name="com.driver.utilities.TestNGListener" />
     </listeners>
 

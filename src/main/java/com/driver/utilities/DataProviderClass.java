@@ -4,8 +4,8 @@ import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
 
-public class DataProviderClass {
-    ReadConfig readConfig;
+final public class DataProviderClass {
+//    ReadConfig readConfig;
     @DataProvider(name="LoginData")
     public Object[][] getLoginData(){
         return new Object[][]
@@ -18,7 +18,7 @@ public class DataProviderClass {
     }
     @DataProvider(name="dataDimension")
     public Object[][] getDataDimension() throws IOException {
-        readConfig=new ReadConfig();
+//        readConfig=new ReadConfig();
         Object dataDimension[][]=new Object[ExcelReader.RowCount()][1];
 
         for (int rowCnt = 0; rowCnt < ExcelReader.RowCount(); rowCnt++){
