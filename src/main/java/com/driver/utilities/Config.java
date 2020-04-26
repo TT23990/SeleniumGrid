@@ -36,4 +36,7 @@ final public class Config {
     public static String getTestData(String data){
         return prop.getProperty(data);
     }
+    public static Boolean isGrid(){
+        return Boolean.valueOf(prop.getProperty("grid"));
+    }
 }

@@ -125,7 +125,7 @@
           <configuration>
             <suiteXmlFiles>
               <!-- TestNG suite XML files -->
-              <suiteXmlFile>local_testng.xml</suiteXmlFile>
+              <suiteXmlFile>testng_local.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>

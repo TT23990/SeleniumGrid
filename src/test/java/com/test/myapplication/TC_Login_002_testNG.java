@@ -1,17 +1,23 @@
 package com.test.myapplication;
 
 import com.driver.pageobject.Login;
+import com.driver.utilities.DataProviderClass;
 import com.driver.utilities.Excel;
+import com.driver.utilities.ReportingAdapter;
+import com.driver.utilities.ReportingListener;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-@Listeners(Reporting.class)
-public class TC_Login_003 extends BaseClass {
+@Listeners(ReportingListener.class) //This listener will start Reporting class to generate Extent report.
+public class TC_Login_002_testNG extends BaseClass {
 
 
-    @Test(testName = "Login test name",dataProvider="dataDimension")
+    @Test(testName = "Login test name",dataProvider="dataDimension1",dataProviderClass = DataProviderClass.class)
 //    ,retryAnalyzer = com.driver.utilities.MyRetry.class)
     void Login(String row) throws Exception {
         Excel.RowNum=Integer.parseInt(row);
@@ -22,19 +28,6 @@ public class TC_Login_003 extends BaseClass {
         Login.submitLogin();
         Assert.assertEquals(driver.getTitle().toString(),"nopCommerce demo store");
         Login.goToLogout();
-    }
-
-    @DataProvider(name="dataDimension")
-    public Object[][] getDataDimension(Method tr) throws Exception {
-        Excel.setWorkBook(tr);
-        Object dataDimension[][]=new Object[Excel.LastRow][1];
-
-        for (int rowCnt = 0; rowCnt < Excel.LastRow; rowCnt++){
-            dataDimension[rowCnt][0]=Integer.toString(rowCnt+1);
-//            dataDimension[rowCnt][1]=Excel.getData("Run");
-
-        }
-        return dataDimension;
     }
 
 }

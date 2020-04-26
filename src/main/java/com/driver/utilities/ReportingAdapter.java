@@ -1,4 +1,4 @@
-package com.test.myapplication;
+package com.driver.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-final public class Reporting extends TestListenerAdapter {
+final public class ReportingAdapter extends TestListenerAdapter {
     private ExtentHtmlReporter htmlReporter;
     private ExtentReports extent;
     private ExtentTest logger;
@@ -37,7 +37,7 @@ final public class Reporting extends TestListenerAdapter {
 
         extent.attachReporter(htmlReporter);
         extent.setSystemInfo("Host name","localhost");
-        extent.setSystemInfo("Environemnt","QA");
+        extent.setSystemInfo("Environemnt","QA_Adapter");
         extent.setSystemInfo("user","admin");
 
         htmlReporter.config().setDocumentTitle("Selenium Test Project"); // Tile of report

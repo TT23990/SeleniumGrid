@@ -31,25 +31,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="095a9a9c-4f6a-4b7c-860c-9a3123da9107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurations/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local_testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drivers/IEDriverServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/IEDriverServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/pageobject/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/pageobject/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remote_testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_grid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/DataProviderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/DataProviderClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/ReadConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/Reporting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/Reporting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/SharedUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/SharedUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/TestNGListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/TestNGListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/driver/utilities/TestNGListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/ReportingListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_DDT_002.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_DDT_002.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/LoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-data/myapplication-test-data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test-data/myapplication-test-data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/Reporting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/driver/utilities/ReportingAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_003.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/myapplication/TC_Login_001_Local.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,18 +85,19 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\InteliJ_Project\MavenSelenium\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test.myapplication" />
+      <recent name="com.driver.utilities" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\InteliJ_Project\MavenSelenium\src\main\java\com\driver\utilities" />
       <recent name="C:\InteliJ_Project\MavenSelenium" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.driver.utilities" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\InteliJ_Project\MavenSelenium\src\main" />
-    </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC_Login_003">
+  <component name="RunManager" selected="TestNG.C:/InteliJ_Project/MavenSelenium/testng_local.xml">
     <configuration name="C:/InteliJ_Project/MavenSelenium/local_testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MavenSelenium" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/local_testng.xml" />
@@ -113,9 +108,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/InteliJ_Project/MavenSelenium/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/InteliJ_Project/MavenSelenium/testng_grid.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MavenSelenium" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_grid.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/InteliJ_Project/MavenSelenium/testng_local.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenSelenium" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_local.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -149,34 +154,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.Login" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC_Login_001_Local" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MavenSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginTest" />
-      <option name="METHOD_NAME" value="Login" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_Login_003" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MavenSelenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.myapplication.*" />
+          <option name="PATTERN" value="com.driver.utilities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test.myapplication" />
-      <option name="MAIN_CLASS_NAME" value="com.test.myapplication.TC_Login_003" />
+      <option name="MAIN_CLASS_NAME" value="com.test.myapplication.TC_Login_001_Local" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -184,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_Login_003.Login" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC_Login_002_testNG" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MavenSelenium" />
       <extension name="coverage">
         <pattern>
@@ -193,9 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test.myapplication" />
-      <option name="MAIN_CLASS_NAME" value="com.test.myapplication.TC_Login_003" />
-      <option name="METHOD_NAME" value="Login" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.test.myapplication.TC_Login_002_testNG" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -204,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TC_Login_003" />
-        <item itemvalue="TestNG.TC_Login_003.Login" />
-        <item itemvalue="TestNG.LoginTest.Login" />
-        <item itemvalue="TestNG.C:/InteliJ_Project/MavenSelenium/testng.xml" />
+        <item itemvalue="TestNG.C:/InteliJ_Project/MavenSelenium/testng_local.xml" />
+        <item itemvalue="TestNG.C:/InteliJ_Project/MavenSelenium/testng_grid.xml" />
         <item itemvalue="TestNG.C:/InteliJ_Project/MavenSelenium/local_testng.xml" />
+        <item itemvalue="TestNG.TC_Login_002_testNG" />
+        <item itemvalue="TestNG.TC_Login_001_Local" />
       </list>
     </recent_temporary>
   </component>
@@ -250,10 +236,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1584916439390" />
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1587671116610">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1587840273789">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587671116610" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587840273789" />
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587422378274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -262,6 +248,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="505" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1587666981675" />
+    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587839759393">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1587839759393" />
     <state x="430" y="215" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587269690089">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -270,38 +260,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="454" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1587780833408" />
-    <state width="1322" height="182" key="GridCell.Tab.0.bottom" timestamp="1587784255496">
+    <state width="1322" height="182" key="GridCell.Tab.0.bottom" timestamp="1587934550566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587784255496" />
-    <state width="1322" height="182" key="GridCell.Tab.0.center" timestamp="1587784255496">
+    <state width="1322" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587934550566" />
+    <state width="1322" height="182" key="GridCell.Tab.0.center" timestamp="1587934550566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587784255496" />
-    <state width="1322" height="182" key="GridCell.Tab.0.left" timestamp="1587784255496">
+    <state width="1322" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587934550566" />
+    <state width="1322" height="182" key="GridCell.Tab.0.left" timestamp="1587934550566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587784255496" />
-    <state width="1322" height="182" key="GridCell.Tab.0.right" timestamp="1587784255496">
+    <state width="1322" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587934550566" />
+    <state width="1322" height="182" key="GridCell.Tab.0.right" timestamp="1587934550566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587784255496" />
-    <state width="1322" height="166" key="GridCell.Tab.1.bottom" timestamp="1587784124010">
+    <state width="1322" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587934550566" />
+    <state width="1322" height="166" key="GridCell.Tab.1.bottom" timestamp="1587928824926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="166" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587784124010" />
-    <state width="1322" height="166" key="GridCell.Tab.1.center" timestamp="1587784124010">
+    <state width="1322" height="166" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587928824926" />
+    <state width="1322" height="166" key="GridCell.Tab.1.center" timestamp="1587928824926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="166" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1587784124010" />
-    <state width="1322" height="166" key="GridCell.Tab.1.left" timestamp="1587784124010">
+    <state width="1322" height="166" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1587928824926" />
+    <state width="1322" height="166" key="GridCell.Tab.1.left" timestamp="1587928824926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="166" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1587784124010" />
-    <state width="1322" height="166" key="GridCell.Tab.1.right" timestamp="1587784124010">
+    <state width="1322" height="166" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1587928824926" />
+    <state width="1322" height="166" key="GridCell.Tab.1.right" timestamp="1587928824926">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="166" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587784124010" />
+    <state width="1322" height="166" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587928824926" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1584577652633">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -318,10 +308,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587519613673" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1587678965449">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1587928001613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587678965449" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587928001613" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586817640477">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -331,24 +321,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/LoginTest.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/LoginTest.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59-sources.jar!/org/openqa/selenium/support/events/EventFiringWebDriver.java</url>
           <line>389</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/LoginTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/driver/utilities/DataProviderClass.java</url>
           <line>22</line>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,34 +1,22 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Local_Grid" parallel="tests">
+<suite name="Local_Grid" thread-count="3" parallel="instances">
     <parameter name="UserName" value="seleniumtest@gmail.com"/>
-    <parameter name="Password" value="
-"/>
+    <parameter name="Password" value="******"/>
+    <parameter name="grid" value="false"/>
     <parameter name="host" value="http://192.168.1.6:4444/wd/hub"/>
 
     <listeners>
-        <listener class-name="com.test.myapplication.Reporting" />
-        <listener class-name="com.driver.utilities.TestNGListener" />
+        <listener class-name="com.driver.utilities.ReportingListener" />
     </listeners>
-
-
-<!--    <test thread-count="1" name="LoginTestLocal">-->
-<!--        <parameter name="browser" value="Local"/>-->
-<!--        <parameter name="host" value="Localhost"/>-->
-<!--        <classes>-->
-<!--            <class name="org.example.LoginTest">-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
-
 
    <test name="WIN10-CH-TEST-1">
        <parameter name="browser" value="chrome"/>
        <parameter name="platform" value="windows"/>
-       <parameter name="version" value="80"/>
+       <parameter name="version" value="81"/>
        <classes>
 <!--           <class name="org.example.LoginTest">-->
 <!--           <class name="com.test.myapplication.TC_Login_001">-->
-           <class name="com.test.myapplication.TC_Login_DDT_002">
+           <class name="com.test.myapplication.TC_Login_002_testNG">
            </class>
        </classes>
    </test>
@@ -54,6 +42,15 @@
 <!--    </test>-->
 
 
+
+<!--    <test thread-count="1" name="LoginTestLocal">-->
+<!--        <parameter name="browser" value="Local"/>-->
+<!--        <parameter name="host" value="Localhost"/>-->
+<!--        <classes>-->
+<!--            <class name="org.example.LoginTest">-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 
 </suite>

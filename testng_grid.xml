@@ -2,6 +2,9 @@
 <suite name="Selenium_Grid">
     <parameter name="UserName" value="seleniumtest@gmail.com"/>
     <parameter name="Password" value="Test@123"/>
+    <listeners>
+        <listener class-name="com.driver.utilities.ReportingListener" />
+    </listeners>
 
 <!--    <test thread-count="1" name="LoginTestLocal">-->
 <!--        <parameter name="browser" value="Local"/>-->
@@ -22,9 +25,10 @@
        </classes>
    </test>
 
-    <parameter name="browser" value="Firefox"/>
-    <parameter name="host" value="http://3.21.207.69:4444/wd/hub"/>
+
     <test name="LoginTestFirefox">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="host" value="http://3.21.207.69:4444/wd/hub"/>
         <classes>
             <class name="org.example.LoginTest">
             </class>
